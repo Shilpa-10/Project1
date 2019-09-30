@@ -7,6 +7,6 @@
 <title>home</title>
 </head>
 <body>
-<h1>I love you Jerry</h1>
+<h1>Home PAge</h1>
 </body>
 </html>
