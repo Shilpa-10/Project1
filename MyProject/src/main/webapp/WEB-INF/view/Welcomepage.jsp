@@ -29,7 +29,7 @@
       <a class="nav-link" href="/register">New Registration</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">All Users</a>
+      <a class="nav-link" href="/show-users#">All Users</a>
     </li>
   </ul>
 </nav>

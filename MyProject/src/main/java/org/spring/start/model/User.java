@@ -14,6 +14,9 @@ public class User {
 	private String lastname;
 	private int age;
 	private String password;
+	User(){
+		
+	}
 
 	public User(String username, String firstname, String lastname, int age, String password) {
 		super();
