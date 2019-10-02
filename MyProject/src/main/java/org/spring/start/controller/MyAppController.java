@@ -78,5 +78,16 @@ public class MyAppController {
 	public String login() {
 		return "login";
 	}
+	
+	@PostMapping("/login-user")
+	public String loginUser(@ModelAttribute User user,HttpServletRequest request) {
+		if(userService.findByUsernameAndPassword(user.getUsername(),user.getPassword())!=null) {
+			return "home";
+		}
+		else {
+		request.setAttribute("error", "Invalid username or password");
+		return "login";
+		
+	}
 
-}
+} }
