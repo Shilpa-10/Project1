@@ -27,13 +27,13 @@
 					<div class="card-body">
 						<h2 class="card-title text-center">Sign In</h2>
 						<form class="form-signin" action="login-user" method="post">
-							<c:if test="${not empty error }">
+							<%-- <c:if test="${not empty error }">
 								<div class="alert alert-danger">
 									<c:out value="error"></c:out>
 								</div>
-							</c:if>
+							</c:if> --%>
 							<div class="form-label-group">
-								<input type="text" id="username" class="form-control"
+								<input type="text" id="username" class="form-control" name="username"
 									value="${user.username}" placeholder="Username" required
 									autofocus>
 
@@ -41,7 +41,7 @@
 							<br>
 
 							<div class="form-label-group">
-								<input type="password" id="inputPassword" class="form-control"
+								<input type="password" id="inputPassword" class="form-control" name="password"
 									value="${user.password}" placeholder="Password" required>
 
 							</div>
@@ -61,7 +61,6 @@
 			</div>
 		</div>
 	</div>
-
-
+ 
 
 </body>

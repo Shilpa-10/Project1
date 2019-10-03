@@ -70,7 +70,7 @@
 			</div>
 		</form>
 		<div class="text-center">
-			Already have an account? <a href="#">Sign in</a>
+			Already have an account? <a href="login">Sign in</a>
 		</div>
 	</div>
 </body>

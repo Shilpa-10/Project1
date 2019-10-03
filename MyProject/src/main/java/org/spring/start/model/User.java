@@ -1,8 +1,10 @@
 package org.spring.start.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name="mytable")
@@ -12,6 +14,7 @@ public class User {
 	private String username;
 	private String firstname;
 	private String lastname;
+	
 	private int age;
 	private String password;
 	User(){
@@ -58,7 +61,7 @@ public class User {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
-
+	
 	public int getAge() {
 		return age;
 	}

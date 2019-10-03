@@ -18,7 +18,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="home.jsp">Home</a>
+  <a class="navbar-brand" href="/index">Home</a>
   
   <!-- Links -->
   <ul class="navbar-nav">
