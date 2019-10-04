@@ -25,11 +25,14 @@
 			<h2>Update User</h2>
 			<p class="hint-text">Update your details.
 				 .</p>
+				  
 			<div class="form-group">
 				<div class="row">
+				
 					<div class="col-xs-4">
+					 	<input type="hidden" name="id" value="${user.id }" />
 						<input type="text" class="form-control" name="firstname"
-							placeholder="First Name" value="${user.firstname}"
+							placeholder="First Name" value="${user.firstname }"
 							 >
 					</div>
 					<div class="col-xs-4">
@@ -55,6 +58,7 @@
 					placeholder="Password" value="${user.password }"
 					 >
 			</div>
+			 
 			<div class="form-group">
 				<input type="password" class="form-control" name="confirm_password"
 					placeholder="Confirm Password">
@@ -68,6 +72,7 @@
 				<button type="submit" class="btn btn-success btn-lg btn-block" value="Update">Update
 					 </button>
 			</div>
+			 
 		</form>
 		<div class="text-center">
 			Already have an account? <a href="#">Sign in</a>

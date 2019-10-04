@@ -59,7 +59,9 @@ public class MyAppController {
 	@RequestMapping("/edit-user")
 	 
 	public String editUser(@RequestParam int id,HttpServletRequest request) {
-		request.setAttribute("users",userService.editUser(id)); 
+	
+		request.setAttribute("user",userService.editUser(id)); 
+		
 		return "updateUser";
 	}
 	
@@ -81,7 +83,7 @@ public class MyAppController {
 	}
 	
 	@RequestMapping("/login-user")
-	public String loginUser(@ModelAttribute User user ,HttpServletRequest request) {
+	public String loginUser(@ModelAttribute User user , HttpServletRequest request) {
 		if(userService.findByUsernameAndPassword(user.getUsername(),user.getPassword())!=null){
 			return "home";
 		}

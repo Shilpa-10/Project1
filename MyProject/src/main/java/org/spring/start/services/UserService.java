@@ -37,10 +37,14 @@ public class UserService {
 		userRepository.deleteById(id);
 	}
 	
-	public User editUser(int id) {
-		 
-		 return userRepository.findById(id).orElse(null ) ;
+	public  User editUser(int id) {
+		
+	
+		User obj =  userRepository.findById(id);
+		obj.getAge();
+		return userRepository.findById(id);
 	}
+	
 	public User findByUsernameAndPassword(String username,String password) {
 		return userRepository.findByUsernameAndPassword(username,password);
 		
